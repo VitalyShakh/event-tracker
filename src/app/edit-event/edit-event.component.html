@@ -1,1 +1,13 @@
-<p>edit-event works!</p>
+<form [formGroup]="event" (ngSubmit)="save()" novalidate>
+
+    <!-- Name -->
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+
+    <!-- Submit -->
+    <div class="button-wrapper">
+        <button mat-flat-button color="primary">Submit</button>
+    </div>
+
+</form>

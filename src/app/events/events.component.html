@@ -1,1 +1,15 @@
-<p>events works!</p>
+<div style="padding: 13px;">
+    <mat-card *ngFor="let event of events" style="margin-top:10px;">
+        <mat-card-header>
+            <mat-card-title>{{event.name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                Here will be event calendar soon
+            </p>
+        </mat-card-content>
+    </mat-card>
+    <mat-action-row>
+        <button mat-button routerLink="/edit-event/0">Create event</button>
+    </mat-action-row>
+</div>
