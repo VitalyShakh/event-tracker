@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EventsComponent } from './events/events.component';
 import { EditEventComponent } from './edit-event/edit-event.component';
 import { EventDetailsComponent } from './event-details/event-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { EventDetailsComponent } from './event-details/event-details.component';
     AngularMaterialModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {TrackingEvent} from '../common/entities/TrackingEvent';
 import {EventsService} from '../events.service';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-event',
@@ -9,7 +10,7 @@ import {EventsService} from '../events.service';
   styleUrls: ['./edit-event.component.less']
 })
 export class EditEventComponent implements OnInit {
-  event: TrackingEvent = new TrackingEvent();
+  event: FormGroup;
 
   constructor(private route: ActivatedRoute, private router: Router, private eventsService: EventsService) { }
 
